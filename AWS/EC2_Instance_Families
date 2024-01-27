@@ -1,0 +1,44 @@
+EC2 Instance Families 
+
+
+m(m4,m5,m6) 
+            General Purpose .Balance of compute , memory and networking 
+            Use Cases :: Genral Purpose : Web servers and code repositories 
+
+t(t2,t3,t3a)
+            Burstable Performance instances (accumulate CPU credits when inactive). Unlimited burstable mode 
+            Use Cases :: Workloads with spikes : web servers , developer environments and small databases  
+            Example : t2.micro 
+            Instances gather CP:U Credits while they are idle 
+            CPU credits can be consumed at a later point in time (upto a maximum CPU Credit)
+            Usecase :: Workloads with sudden spikes - Test Environments 
+
+
+
+
+c(c4,c5,c5n)
+            Compute Optimized : High performance processors
+            Use Cases :: Batch processing , high performance http servers , high performance computing (HPC) 
+
+r(r4,r5,r5a,r5n)
+             Memory (RAM) optimised
+             Memory Caches , in-memory databases and real time big data analytics   
+
+
+i(i3,d2)
+        Storage (I/O)  optiomized 
+        NoSQL databases and data warehousing 
+        
+
+g(g3,g4)  
+        GPU optimized
+        Floating point number calculations , graphics processing , or video compression
+
+f(f1)
+       FPGA instances-customizable field programmable gate arrays 
+       Use Cases :: Applications needing massively parallel processing power , such as genomics , data analytics , video processing and financial computing 
+
+inf(inf1)
+          Machine Learning ASIC instances 
+          Use Cases :: Machine Learning applications such as image recognition , sppech recognition , natural language processing and personalization.
+

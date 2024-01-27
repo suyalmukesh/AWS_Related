@@ -1,0 +1,29 @@
+On-Demand :  Request when you want it 
+             Flexible and Most Expensive 
+             Use and Throw ! 
+             Ideal for : 
+                    -   A web application which receives spikey traffic 
+                    -   A batch program which has unpredicatable runtime and cannot be interrupted 
+                    -   A batch program being moved from on premises to cloud for the first time. 
+
+
+
+Spot : Quote the maximum price 
+       Cheapest (up to 90% off ) BUT NO Guarantees 
+
+
+
+
+Reserved : Reserve ahead of time 
+           Upto 75% off . 1 or 3 years reservation.
+
+
+
+
+Saving Plans : Commit spending $X per hour on (EC2 or AWS Fargate or Lambda )
+               Upto 66% off . No restrictions. 1 or 3 year reservation.
+
+
+
+             
+

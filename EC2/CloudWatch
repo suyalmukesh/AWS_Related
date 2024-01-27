@@ -1,0 +1,12 @@
+Monitoring EC2 instances - Custom Metrics 
+
+CloudWatch does NOT have access to operating system metrics like memory consumption
+
+You can provide those metrics to CloudWatch:
+  -- Install CloudWatch Agent to send OS metrics to cloud watch 
+     
+     OR 
+
+  -- Use CloudWatch collected plud-in 
+  
+      

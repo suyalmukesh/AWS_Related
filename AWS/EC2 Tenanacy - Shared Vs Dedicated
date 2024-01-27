@@ -1,0 +1,12 @@
+Shared Tenancy (Default)
+  -- Single host machine can have instances from multiple customers 
+
+EC2 Dedicated Instances 
+   -- Virtualized instances on h/w dedicated to one customer 
+   -- You do not have visibility into the hardware of underlying host 
+
+EC2 Dedicated  Hosts 
+  -- Physical servers dedicated to one customer 
+  -- You have visibility into the hardware of underlying host (sockets and physical cores )   
+
+

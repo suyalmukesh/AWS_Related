@@ -1,0 +1,10 @@
+Amazon ECS - Task Defination   
+
+Container Defination(S)
+    1. What is the image you want to use ?
+    2. What resources does the container use (memory , CPU and ports) ?
+
+Task Role (Optional) : If you need access to AWS services (Anmazon RDS etc)
+
+Task execution IAM role: Provides permissions to pull container images and publish container logs to Amazon CloudWatch 
+

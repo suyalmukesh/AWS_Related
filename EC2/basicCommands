@@ -1,0 +1,20 @@
+sudo su 
+yum update -y 
+
+yum install httpd 
+systemctl start httpd
+systemctl enable httpd 
+
+echo "Hello World" > /var/www/html/index.html 
+
+curl http://169.254.169.254/latest/meta-data 
+curl https:169.254.169.254/latest/meta-data/ami-id
+
+curl http://169.254.169.254/latest/dynamic
+curl http://169.254.169.254/latest/dynamic/instance-identity/document 
+
+
+url -s http://169.254.169.254/latest/dynamic/instance-identity/document > /var/www/html/index.html
+
+
+

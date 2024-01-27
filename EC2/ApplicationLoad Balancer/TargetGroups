@@ -1,0 +1,52 @@
+Architecture Summary 
+
+
+1. Highly decoupled Architecture 
+2. Load Balancer can have multiple Listeners (protocol + port Combinations)
+3. Each Listener can have multiple rules each routing to a target group based on request content.
+4. A target can be part of multiple target groups . 
+
+Listeners can be added to Target Group based on - 
+
+1. Host header 
+2. Path 
+3. Http request method 
+4. Source IP 
+5. Http Header 
+6. Query string 
+
+
+Auto Scaling :
+
+Auto Scaling Components : 
+
+1. Launch Configuration / Template'
+   -- EC2 instance size and AMI 
+
+2. Auto Scaling Group 
+  -- Reference to Launch Configuration / Template 
+  -- Min,max and desired size of ASG 
+  -- EC2 health cheks by default . Optionally enable ELB health checks 
+
+3. Auto Scaling Policies 
+  -- When and How to execute scaling ? 
+  
+Dynamic Scaling Types :
+    -- 1 :  Target tracking scaling 
+            --   Maintain CPU utilization at 70% 
+    -- 2 :  Step Scaling 
+            -- +5 if CPU utilization > 80%
+            -- -3 if CPU utilization < 60%      
+    -- 3 :  Simple Scaling 
+            -- +1 if CPU utilization between 70% and 80%
+            -- +3 if CPU utilization between 80% and 100% 
+            -- Similar setting for scale down 
+            
+Question : How AWS know when to sclae up or down ? 
+Answer : Cloud Watch 
+
+CW Alarm ----->  Auto Scaling ----> EC2 Instances 
+
+Two Parts:
+    1. CloudWatch alarm (Is CPU utilization > 80%? or 60%)
+    2. Scaling Action (+5 EC2 instances or -3 EC2 instances)    
